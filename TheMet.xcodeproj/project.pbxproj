@@ -11,6 +11,13 @@
 		59727DAD2F50AF93007811E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DAC2F50AF93007811E7 /* ContentView.swift */; };
 		59727DAF2F50AF95007811E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59727DAE2F50AF95007811E7 /* Assets.xcassets */; };
 		59727DB22F50AF95007811E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59727DB12F50AF95007811E7 /* Preview Assets.xcassets */; };
+		59727DBB2F50BF1E007811E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59727DBA2F50BF1E007811E7 /* LaunchScreen.storyboard */; };
+		59727DBD2F50C398007811E7 /* MetStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DBC2F50C398007811E7 /* MetStoreDevData.swift */; };
+		59727DBF2F50C8AA007811E7 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DBE2F50C8AA007811E7 /* ColorExtension.swift */; };
+		59727DC12F50C948007811E7 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC02F50C948007811E7 /* Object.swift */; };
+		59727DC32F50C9D4007811E7 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC22F50C9D4007811E7 /* ObjectView.swift */; };
+		59727DC52F50D8D4007811E7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC42F50D8D4007811E7 /* SafariView.swift */; };
+		59727DC72F50DA39007811E7 /* TheMetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC62F50DA39007811E7 /* TheMetStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		59727DAC2F50AF93007811E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59727DAE2F50AF95007811E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59727DB12F50AF95007811E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59727DBA2F50BF1E007811E7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59727DBC2F50C398007811E7 /* MetStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetStoreDevData.swift; sourceTree = "<group>"; };
+		59727DBE2F50C8AA007811E7 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		59727DC02F50C948007811E7 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		59727DC22F50C9D4007811E7 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
+		59727DC42F50D8D4007811E7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		59727DC62F50DA39007811E7 /* TheMetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMetStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +65,16 @@
 		59727DA92F50AF93007811E7 /* TheMet */ = {
 			isa = PBXGroup;
 			children = (
-				59727DAA2F50AF93007811E7 /* TheMetApp.swift */,
-				59727DAC2F50AF93007811E7 /* ContentView.swift */,
 				59727DAE2F50AF95007811E7 /* Assets.xcassets */,
+				59727DBA2F50BF1E007811E7 /* LaunchScreen.storyboard */,
 				59727DB02F50AF95007811E7 /* Preview Content */,
+				59727DBE2F50C8AA007811E7 /* ColorExtension.swift */,
+				59727DAC2F50AF93007811E7 /* ContentView.swift */,
+				59727DC02F50C948007811E7 /* Object.swift */,
+				59727DC22F50C9D4007811E7 /* ObjectView.swift */,
+				59727DC42F50D8D4007811E7 /* SafariView.swift */,
+				59727DAA2F50AF93007811E7 /* TheMetApp.swift */,
+				59727DC62F50DA39007811E7 /* TheMetStore.swift */,
 			);
 			path = TheMet;
 			sourceTree = "<group>";
@@ -62,6 +82,7 @@
 		59727DB02F50AF95007811E7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				59727DBC2F50C398007811E7 /* MetStoreDevData.swift */,
 				59727DB12F50AF95007811E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -125,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59727DBB2F50BF1E007811E7 /* LaunchScreen.storyboard in Resources */,
 				59727DB22F50AF95007811E7 /* Preview Assets.xcassets in Resources */,
 				59727DAF2F50AF95007811E7 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59727DC72F50DA39007811E7 /* TheMetStore.swift in Sources */,
+				59727DC12F50C948007811E7 /* Object.swift in Sources */,
+				59727DC32F50C9D4007811E7 /* ObjectView.swift in Sources */,
+				59727DBD2F50C398007811E7 /* MetStoreDevData.swift in Sources */,
 				59727DAD2F50AF93007811E7 /* ContentView.swift in Sources */,
 				59727DAB2F50AF93007811E7 /* TheMetApp.swift in Sources */,
+				59727DBF2F50C8AA007811E7 /* ColorExtension.swift in Sources */,
+				59727DC52F50D8D4007811E7 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
