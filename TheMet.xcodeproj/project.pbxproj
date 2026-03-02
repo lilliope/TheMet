@@ -12,13 +12,53 @@
 		59727DAF2F50AF95007811E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59727DAE2F50AF95007811E7 /* Assets.xcassets */; };
 		59727DB22F50AF95007811E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59727DB12F50AF95007811E7 /* Preview Assets.xcassets */; };
 		59727DBB2F50BF1E007811E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59727DBA2F50BF1E007811E7 /* LaunchScreen.storyboard */; };
-		59727DBD2F50C398007811E7 /* MetStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DBC2F50C398007811E7 /* MetStoreDevData.swift */; };
 		59727DBF2F50C8AA007811E7 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DBE2F50C8AA007811E7 /* ColorExtension.swift */; };
 		59727DC12F50C948007811E7 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC02F50C948007811E7 /* Object.swift */; };
 		59727DC32F50C9D4007811E7 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC22F50C9D4007811E7 /* ObjectView.swift */; };
 		59727DC52F50D8D4007811E7 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC42F50D8D4007811E7 /* SafariView.swift */; };
 		59727DC72F50DA39007811E7 /* TheMetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC62F50DA39007811E7 /* TheMetStore.swift */; };
+		59994D422F5218B700E716D4 /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59994D412F5218B700E716D4 /* URLComponentsExtension.swift */; };
+		59994D442F521A4300E716D4 /* TheMetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59994D432F521A4300E716D4 /* TheMetService.swift */; };
+		59994D4C2F55279200E716D4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59994D4B2F55279100E716D4 /* WidgetKit.framework */; };
+		59994D4E2F55279200E716D4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59994D4D2F55279200E716D4 /* SwiftUI.framework */; };
+		59994D512F55279200E716D4 /* TheMetWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59994D502F55279200E716D4 /* TheMetWidgetBundle.swift */; };
+		59994D532F55279200E716D4 /* TheMetWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59994D522F55279200E716D4 /* TheMetWidget.swift */; };
+		59994D552F55279500E716D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59994D542F55279500E716D4 /* Assets.xcassets */; };
+		59994D592F55279500E716D4 /* TheMetWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 59994D492F55279100E716D4 /* TheMetWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		59994D5E2F55297F00E716D4 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC02F50C948007811E7 /* Object.swift */; };
+		59994D5F2F552BB000E716D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59727DAE2F50AF95007811E7 /* Assets.xcassets */; };
+		59994D612F552BCD00E716D4 /* SupportingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59994D602F552BCD00E716D4 /* SupportingViews.swift */; };
+		59994D642F552C1300E716D4 /* TheMetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DC62F50DA39007811E7 /* TheMetStore.swift */; };
+		59E135262F55330F00B8405B /* TheMetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59994D432F521A4300E716D4 /* TheMetService.swift */; };
+		59E135272F55331500B8405B /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59994D412F5218B700E716D4 /* URLComponentsExtension.swift */; };
+		59E1352A2F5538A000B8405B /* SupportingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59994D602F552BCD00E716D4 /* SupportingViews.swift */; };
+		59E1352B2F55391E00B8405B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59727DBE2F50C8AA007811E7 /* ColorExtension.swift */; };
+		59E1352F2F553A7500B8405B /* WidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E1352C2F553A6700B8405B /* WidgetView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59994D572F55279500E716D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59727D9F2F50AF93007811E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59994D482F55279100E716D4;
+			remoteInfo = TheMetWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		59994D5D2F55279500E716D4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				59994D592F55279500E716D4 /* TheMetWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		59727DA72F50AF93007811E7 /* TheMet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,12 +67,24 @@
 		59727DAE2F50AF95007811E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59727DB12F50AF95007811E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59727DBA2F50BF1E007811E7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		59727DBC2F50C398007811E7 /* MetStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetStoreDevData.swift; sourceTree = "<group>"; };
 		59727DBE2F50C8AA007811E7 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		59727DC02F50C948007811E7 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		59727DC22F50C9D4007811E7 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
 		59727DC42F50D8D4007811E7 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		59727DC62F50DA39007811E7 /* TheMetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMetStore.swift; sourceTree = "<group>"; };
+		59994D412F5218B700E716D4 /* URLComponentsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
+		59994D432F521A4300E716D4 /* TheMetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMetService.swift; sourceTree = "<group>"; };
+		59994D492F55279100E716D4 /* TheMetWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TheMetWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		59994D4B2F55279100E716D4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		59994D4D2F55279200E716D4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		59994D502F55279200E716D4 /* TheMetWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMetWidgetBundle.swift; sourceTree = "<group>"; };
+		59994D522F55279200E716D4 /* TheMetWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMetWidget.swift; sourceTree = "<group>"; };
+		59994D542F55279500E716D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59994D562F55279500E716D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59994D602F552BCD00E716D4 /* SupportingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingViews.swift; sourceTree = "<group>"; };
+		59E135282F55383100B8405B /* TheMet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheMet.entitlements; sourceTree = "<group>"; };
+		59E135292F55387700B8405B /* TheMetWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TheMetWidgetExtension.entitlements; sourceTree = "<group>"; };
+		59E1352C2F553A6700B8405B /* WidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +95,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59994D462F55279100E716D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59994D4E2F55279200E716D4 /* SwiftUI.framework in Frameworks */,
+				59994D4C2F55279200E716D4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		59727D9E2F50AF93007811E7 = {
 			isa = PBXGroup;
 			children = (
+				59E135292F55387700B8405B /* TheMetWidgetExtension.entitlements */,
 				59727DA92F50AF93007811E7 /* TheMet */,
+				59994D4F2F55279200E716D4 /* TheMetWidget */,
+				59994D4A2F55279100E716D4 /* Frameworks */,
 				59727DA82F50AF93007811E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				59727DA72F50AF93007811E7 /* TheMet.app */,
+				59994D492F55279100E716D4 /* TheMetWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,16 +130,14 @@
 		59727DA92F50AF93007811E7 /* TheMet */ = {
 			isa = PBXGroup;
 			children = (
+				59E135282F55383100B8405B /* TheMet.entitlements */,
 				59727DAE2F50AF95007811E7 /* Assets.xcassets */,
 				59727DBA2F50BF1E007811E7 /* LaunchScreen.storyboard */,
+				59994D632F552C0000E716D4 /* Model */,
+				59994D652F552CE500E716D4 /* Networking */,
 				59727DB02F50AF95007811E7 /* Preview Content */,
-				59727DBE2F50C8AA007811E7 /* ColorExtension.swift */,
-				59727DAC2F50AF93007811E7 /* ContentView.swift */,
-				59727DC02F50C948007811E7 /* Object.swift */,
-				59727DC22F50C9D4007811E7 /* ObjectView.swift */,
-				59727DC42F50D8D4007811E7 /* SafariView.swift */,
+				59994D672F552D8100E716D4 /* Views */,
 				59727DAA2F50AF93007811E7 /* TheMetApp.swift */,
-				59727DC62F50DA39007811E7 /* TheMetStore.swift */,
 			);
 			path = TheMet;
 			sourceTree = "<group>";
@@ -82,10 +145,60 @@
 		59727DB02F50AF95007811E7 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				59727DBC2F50C398007811E7 /* MetStoreDevData.swift */,
 				59727DB12F50AF95007811E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59994D4A2F55279100E716D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59994D4B2F55279100E716D4 /* WidgetKit.framework */,
+				59994D4D2F55279200E716D4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59994D4F2F55279200E716D4 /* TheMetWidget */ = {
+			isa = PBXGroup;
+			children = (
+				59994D542F55279500E716D4 /* Assets.xcassets */,
+				59994D522F55279200E716D4 /* TheMetWidget.swift */,
+				59994D502F55279200E716D4 /* TheMetWidgetBundle.swift */,
+				59E1352C2F553A6700B8405B /* WidgetView.swift */,
+				59994D562F55279500E716D4 /* Info.plist */,
+			);
+			path = TheMetWidget;
+			sourceTree = "<group>";
+		};
+		59994D632F552C0000E716D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				59727DC02F50C948007811E7 /* Object.swift */,
+				59727DC62F50DA39007811E7 /* TheMetStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		59994D652F552CE500E716D4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				59994D432F521A4300E716D4 /* TheMetService.swift */,
+				59994D412F5218B700E716D4 /* URLComponentsExtension.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		59994D672F552D8100E716D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59727DBE2F50C8AA007811E7 /* ColorExtension.swift */,
+				59727DAC2F50AF93007811E7 /* ContentView.swift */,
+				59727DC22F50C9D4007811E7 /* ObjectView.swift */,
+				59727DC42F50D8D4007811E7 /* SafariView.swift */,
+				59994D602F552BCD00E716D4 /* SupportingViews.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,15 +211,34 @@
 				59727DA32F50AF93007811E7 /* Sources */,
 				59727DA42F50AF93007811E7 /* Frameworks */,
 				59727DA52F50AF93007811E7 /* Resources */,
+				59994D5D2F55279500E716D4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				59994D582F55279500E716D4 /* PBXTargetDependency */,
 			);
 			name = TheMet;
 			productName = TheMet;
 			productReference = 59727DA72F50AF93007811E7 /* TheMet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		59994D482F55279100E716D4 /* TheMetWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59994D5A2F55279500E716D4 /* Build configuration list for PBXNativeTarget "TheMetWidgetExtension" */;
+			buildPhases = (
+				59994D452F55279100E716D4 /* Sources */,
+				59994D462F55279100E716D4 /* Frameworks */,
+				59994D472F55279100E716D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheMetWidgetExtension;
+			productName = TheMetWidgetExtension;
+			productReference = 59994D492F55279100E716D4 /* TheMetWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -119,6 +251,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					59727DA62F50AF93007811E7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					59994D482F55279100E716D4 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -137,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				59727DA62F50AF93007811E7 /* TheMet */,
+				59994D482F55279100E716D4 /* TheMetWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +288,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59994D472F55279100E716D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59994D5F2F552BB000E716D4 /* Assets.xcassets in Resources */,
+				59994D552F55279500E716D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -161,16 +306,42 @@
 			files = (
 				59727DC72F50DA39007811E7 /* TheMetStore.swift in Sources */,
 				59727DC12F50C948007811E7 /* Object.swift in Sources */,
+				59994D422F5218B700E716D4 /* URLComponentsExtension.swift in Sources */,
 				59727DC32F50C9D4007811E7 /* ObjectView.swift in Sources */,
-				59727DBD2F50C398007811E7 /* MetStoreDevData.swift in Sources */,
 				59727DAD2F50AF93007811E7 /* ContentView.swift in Sources */,
 				59727DAB2F50AF93007811E7 /* TheMetApp.swift in Sources */,
+				59994D442F521A4300E716D4 /* TheMetService.swift in Sources */,
+				59994D612F552BCD00E716D4 /* SupportingViews.swift in Sources */,
 				59727DBF2F50C8AA007811E7 /* ColorExtension.swift in Sources */,
 				59727DC52F50D8D4007811E7 /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		59994D452F55279100E716D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59994D532F55279200E716D4 /* TheMetWidget.swift in Sources */,
+				59994D642F552C1300E716D4 /* TheMetStore.swift in Sources */,
+				59994D5E2F55297F00E716D4 /* Object.swift in Sources */,
+				59E1352B2F55391E00B8405B /* ColorExtension.swift in Sources */,
+				59E135262F55330F00B8405B /* TheMetService.swift in Sources */,
+				59E1352A2F5538A000B8405B /* SupportingViews.swift in Sources */,
+				59E1352F2F553A7500B8405B /* WidgetView.swift in Sources */,
+				59994D512F55279200E716D4 /* TheMetWidgetBundle.swift in Sources */,
+				59E135272F55331500B8405B /* URLComponentsExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59994D582F55279500E716D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59994D482F55279100E716D4 /* TheMetWidgetExtension */;
+			targetProxy = 59994D572F55279500E716D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		59727DB32F50AF95007811E7 /* Debug */ = {
@@ -290,11 +461,14 @@
 		59727DB62F50AF95007811E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TheMet/TheMet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheMet/Preview Content\"";
+				DEVELOPMENT_TEAM = 7S57W4ZXMG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,7 +481,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lily.TheMet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.TheMet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,11 +492,14 @@
 		59727DB72F50AF95007811E7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TheMet/TheMet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TheMet/Preview Content\"";
+				DEVELOPMENT_TEAM = 7S57W4ZXMG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -335,8 +512,64 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lily.TheMet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.TheMet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59994D5B2F55279500E716D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TheMetWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7S57W4ZXMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheMetWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TheMetWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lily.TheMet.TheMetWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59994D5C2F55279500E716D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = TheMetWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7S57W4ZXMG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TheMetWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TheMetWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lily.TheMet.TheMetWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,6 +593,15 @@
 			buildConfigurations = (
 				59727DB62F50AF95007811E7 /* Debug */,
 				59727DB72F50AF95007811E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59994D5A2F55279500E716D4 /* Build configuration list for PBXNativeTarget "TheMetWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59994D5B2F55279500E716D4 /* Debug */,
+				59994D5C2F55279500E716D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

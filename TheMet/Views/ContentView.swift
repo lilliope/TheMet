@@ -5,9 +5,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var store = TheMetStore()
-    @State private var query = "rhino"
+    @StateObject private var store = TheMetStore(12)
+    @State private var query = "persimmon"
     @State private var showQueryField = false
+    @State private var fetchObjectsTask: Task<Void, Error>?
+    @State privare var path = NavigationPath()
     
     var body: some View {
         NavigationStack {
@@ -44,10 +46,21 @@ struct ContentView: View {
                         RoundedRectangle(cornerRadius: 8)
                             .stroke(Color.metBackground, lineWidth: 2))
                 }
-                .alert("Search the Met", isPresented: $showQueryField) {
-                    TextField("Search the Met", text: $query)
-                    Button("Search") {}
-                }
+                .alert(
+                    "Search the Met",
+                    isPresented: $showQueryField) {
+                        TextField("Search the Met", text: $query)
+                        Button("Search") {
+                            fetchObjectsTask?.cancel()
+                            fetchObjectsTask = Task {
+                                do {
+                                    store.objects = []
+                                    try await store.fetchObjects(for: query)
+                                }
+                                catch {}
+                            }
+                        }
+                    }
                 .navigationDestination(for: URL.self) { url in
                     SafariView(url: url)
                         .navigationBarTitleDisplayMode(.inline)
@@ -57,6 +70,29 @@ struct ContentView: View {
                     ObjectView(object: object)
                 }
             }
+            .overlay {
+                if store.objects.isEmpty { ProgressView() }
+            }
+        }
+        .onOpenURL { url in
+            if let id = url.host,
+               let object = store.objects.first(
+                where: { String($0.objectID) == id }) {
+                    if object.isPublicDomain {
+                        path.append(object)
+                    }
+                    else {
+                        if let url = URL(string: object.objectURL) {
+                            path.append(url)
+                        }
+                    }
+                }
+        }
+        .task {
+            do {
+                try await store.fetchObjects(for: query)
+            }
+            catch {}
         }
     }
 }
@@ -64,18 +100,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-struct WebIndicatorView: View {
-    let title: String
-    
-    var body: some View {
-        HStack {
-            Text(title)
-            Spacer()
-            Image(systemName: "rectangle.portrait.and.arrow.right.fill")
-                .font(.footnote)
-        }
     }
 }
